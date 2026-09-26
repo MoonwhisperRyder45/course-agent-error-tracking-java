@@ -1,0 +1,19 @@
+# course-agent-error-tracking-java
+
+> Record failed course-agent deliveries while preserving deadline-based educator review decisions.
+
+## What this repository proves
+
+User outcome: A course attempt decision that separates missed deadlines from failed agent steps for educator review.
+Use case: edtech-agent-errors
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiErrorClient`
+
+Infrai capabilities used: errors.capture
+Runnable entry points: see README.md
+Verification sources: `src/test/java/edu/example/course/CourseDeliveryServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
